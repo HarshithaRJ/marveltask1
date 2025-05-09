@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Light</title>
+<style>
+  /* Style for the button */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div id="container">
+  <h1 id="greeting">Hi</h1>
+  <button id="toggleButton">Click on me to toggle light</button>
+</div>
+
+<script>
+  // JavaScript to toggle the text on button click
+  document.getElementById("toggleButton").addEventListener("click", function() {
+    var greetingElement = document.getElementById("greeting");
+    if (greetingElement.textContent === "Hi") {
+      greetingElement.textContent = "Bye";
+    } else {
+      greetingElement.textContent = "Hi";
+    }
+  });
+</script>
+
+</body>
+</html>
